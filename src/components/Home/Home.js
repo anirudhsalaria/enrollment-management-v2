@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { db } from "../../firebase";
 import Header from "../Header";
 import Footer from "../Footer/Footer";
+import BotpressChat from "../ChatBot/ChatBot";
 function Home(props) {
   return (
 
@@ -10,6 +11,7 @@ function Home(props) {
     <div className="w-full h-full"  >
       <Header />
 
+      <BotpressChat/>
 
       <div class="grid md:grid-cols-2 sm:grid-rows-2 gap-4 p-16 landingbanner">
         <div className="">
@@ -34,7 +36,6 @@ function Home(props) {
           </div>
 
         </div>
-
         <div>
           <div className="font-bold text-5xl text-stone-50 p-5">{props.name ? `Welcome - ${props.name}` : "Login please"}</div>
           <p className="text-stone-50 text-lg md:text-left flex flex-wrap tracking-wide italic">
