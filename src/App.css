@@ -1,0 +1,178 @@
+.checkoutbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242d60;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', 'Ubuntu', sans-serif;
+    height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .checkoutSection {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 112px;
+    border-radius: 6px;
+    justify-content: space-between;
+  }
+  .product {
+    display: flex;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .messageP {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.154px;
+    color: #242d60;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .checkoutImg {
+    margin: 10px;
+    width: 74px;
+    height: 57px;
+  }
+  .checkH3,
+  .checkH5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.154px;
+    color: #242d60;
+    margin: 0;
+  }
+  .checkH5 {
+    opacity: 0.5;
+  }
+  .checkoutBtn {
+    height: 36px;
+    background: #556cd6;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.6;
+    border-radius: 0 0 6px 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  }
+  .checkoutBtn:hover {
+    opacity: 0.8;
+  }
+
+  .signupbanner{
+    background-image: url('https://cucet.cuchd.in/new-assets/img/herobanner-bg1.webp');
+    content: "";
+    position: center center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border-radius: 0 0 100px 100px; */
+    background-blend-mode: overlay;
+    background-color: rgba(34, 71, 122, 0.7);
+  }
+
+  .loginbanner{
+    background-image: url('https://cucet.cuchd.in/new-assets/img/login-bg.webp');
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* border-radius: 0 0 100px 100px; */
+    background-blend-mode: overlay;
+    background-color: rgba(12, 25, 42, 0.9);
+  }
+
+  .adminloginbanner{
+    background-image: url('https://lh4.ggpht.com/_fkKr9ITAEto/S7Tpxf_i7jI/AAAAAAAAADc/ao_Vrx5XCC4/s1024/51.jpg');
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* border-radius: 0 0 100px 100px; */
+    background-blend-mode: overlay;
+    background-color: rgba(12, 25, 42, 0.9);
+  }
+
+  .admindashboardbanner,.formbanner{
+    background-image: url('https://lh4.ggpht.com/_fkKr9ITAEto/S7Tpxf_i7jI/AAAAAAAAADc/ao_Vrx5XCC4/s1024/51.jpg');
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* border-radius: 0 0 100px 100px; */
+    background-blend-mode: overlay;
+    background-color: rgba(7, 9, 10, 0.9);
+  }
+  .counsellorbanner{
+    background-image: url('https://lh4.ggpht.com/_fkKr9ITAEto/S7Tpxf_i7jI/AAAAAAAAADc/ao_Vrx5XCC4/s1024/51.jpg');
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(7, 9, 10, 0.9);
+  }
+  .studentdashboardbanner{
+    background-image: url('https://xgeeksweb.com/wp-content/uploads/2023/06/DSC_0008aaaa-1.jpg');
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(7, 9, 10, 0.8);
+  }
+
+  .studentdashboard{
+    background-image: url("https://www.careeryojana.in/wp-content/uploads/2021/04/SMVDU-University.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+  }
+
+  .landingbanner{
+    background-image: url('https://www.cuchd.in/admissions/images/admission-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: center;
+    height: 80vh;
+    background-blend-mode: overlay;
+    background-color: rgba(27,27,27,0.9);
+  }
+
+  .landingactivity{
+    transition: 0.6s;
+  }
+
+  .landingactivity:hover{
+    transform: scale(1.05);
+  }
+
+  .applybutton{
+    transition: 0.5s;
+  }
+  .applybutton:hover{
+    transform: scale(1.05);
+  }
