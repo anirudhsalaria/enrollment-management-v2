@@ -46,7 +46,7 @@ function App() {
             <Route path="/cancel" element={<Cancel />} />
             <Route path="/" element={<Home name={userName} />} />
             <Route path="/CounsellorRequests" element={<CounsellorRequests/>}/>
-          </Routes>
+        </Routes>
         </Router>
       </div>
     </UserProvider>

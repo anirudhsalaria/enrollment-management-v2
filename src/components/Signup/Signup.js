@@ -72,11 +72,35 @@ function Signup() {
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
+  const validateName = (name) => {
+    const nameRegex = /^[A-Za-z\s]+$/;
+    return nameRegex.test(name);
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+  const validatePassword = (password) => {
+    return password.length >= 6; 
+  };
   const handleSubmission = (e) => {
     console.log("enter")
     e.preventDefault();
     if (!values.name || !values.email || !values.pass) {
       setErrorMsg("Fill all fields");
+      return;
+    }
+    if (!validateName(values.name)) {
+      setErrorMsg("Name can only contain letters and spaces");
+      return;
+    }
+    if (!validateEmail(values.email)) {
+      setErrorMsg("Invalid email format");
+      return;
+    }
+    if (!validatePassword(values.pass)) {
+      setErrorMsg("Password must be at least 6 characters long");
       return;
     }
     setErrorMsg("");
